@@ -1,0 +1,36 @@
+nav {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25em 1.625em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-title a h2 {
+  color: var(--primary-font-color);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.nav-links a {
+  color: #4d4d4d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+  color: var(--primary-font-color);
+}
+
+.nav-links a:first-child {
+  margin-right: 0.75em;
+}

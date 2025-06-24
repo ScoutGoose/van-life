@@ -1,0 +1,39 @@
+.homepage-container {
+  height: calc(100vh - 6.3125em - 4.58em);
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)),
+    url("/assets/images/home-hero.jpg") bottom/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 4em 1.6em;
+}
+
+.homepage-container h1 {
+  font-size: 2.25rem;
+  align-self: flex-start;
+}
+
+.homepage-container p {
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.homepage-btn {
+  width: 100%;
+  text-align: center;
+  background-color: #ff8c38;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5em;
+}
+
+.homepage-container h1 {
+  margin-bottom: 0.6em;
+}
+
+.homepage-container p {
+  margin-bottom: 3.2em;
+}
