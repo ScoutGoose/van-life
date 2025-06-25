@@ -1,5 +1,5 @@
 .about-container {
-  height: calc(100vh - 6.3125em - 4.58em);
+  min-height: calc(100vh - 6.3125em - 4.58em);
 }
 
 .about-header-img {

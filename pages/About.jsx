@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../styles/about.css";
 export default function About() {
   return (
-    <section className="about">
+    <section className="about-page">
       <div className="about-container">
         <div className="about-header-img"></div>
         <div className="about-info">

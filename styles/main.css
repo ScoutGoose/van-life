@@ -3,6 +3,10 @@
   --primary-font-color: #000;
   --secondary-font-color: #fff;
   --primary-background-color: #fff7ed;
+  --primary-btn-background-color: #ff8c38;
+  --van-type-background-color-simple: #e17654;
+  --van-type-background-color-rugged: #115e59;
+  --van-type-background-color-luxury: #161616;
 }
 
 * {

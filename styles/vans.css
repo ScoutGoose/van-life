@@ -1,0 +1,16 @@
+.vans-page {
+  background-color: var(--primary-background-color);
+  padding: 3.375em 1.625em;
+  min-height: calc(100vh - 6.3125em - 4.58em);
+}
+
+.vans-page h2 {
+  font-size: 2rem;
+}
+
+.vans-options-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}

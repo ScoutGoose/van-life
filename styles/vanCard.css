@@ -1,0 +1,65 @@
+.single-card {
+  width: 14.375rem;
+  border-radius: 0.3125em;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 14.375rem;
+  border-radius: 0.3125em;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3125em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name-and-type h3,
+.price h3 {
+  color: var(--primary-font-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.name-and-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-and-type span {
+  margin-right: auto;
+  font-size: 1rem;
+  margin-top: 0.625em;
+  color: var(--secondary-font-color);
+  padding: 0.5em 0.875em;
+  font-weight: 500;
+  letter-spacing: 0.03125em;
+  border-radius: 0.3125em;
+}
+
+.price span {
+  color: var(--primary-font-color);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.van-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625em 0;
+}
+
+.simple {
+  background-color: var(--van-type-background-color-simple);
+}
+
+.rugged {
+  background-color: var(--van-type-background-color-rugged);
+}
+
+.luxury {
+  background-color: var(--van-type-background-color-luxury);
+}
