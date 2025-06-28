@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "../styles/vanDetails.css";
+import "../styles/pages-styles/vanDetails.css";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 export default function VanDetails() {
   const { id } = useParams();

@@ -1,9 +1,10 @@
 :root {
-  font-size: 1rem;
+  font-size: 12px;
   --primary-font-color: #000;
   --secondary-font-color: #fff;
   --primary-background-color: #fff7ed;
   --primary-btn-background-color: #ff8c38;
+  --nav-links-color: #4d4d4d;
   --van-type-background-color-simple: #e17654;
   --van-type-background-color-rugged: #115e59;
   --van-type-background-color-luxury: #161616;
@@ -20,7 +21,19 @@ body {
   background-color: var(--primary-background-color);
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .btn {
   border: none;
   border-radius: 0.3em;
+}
+
+@media (min-width: 576px) {
+  :root {
+    font-size: 16px;
+  }
 }

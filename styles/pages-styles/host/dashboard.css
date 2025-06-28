@@ -1,0 +1,122 @@
+.dashboard-page {
+  flex-grow: 1;
+}
+
+.dashboard-navbar {
+  font-size: 1.125rem;
+  padding: 1.75em 1.4em;
+}
+
+.dashboard-navbar a:not(:first-of-type) {
+  margin-left: 1.6em;
+}
+
+.dashboard-navbar a {
+  color: var(--nav-links-color);
+  font-weight: 500;
+}
+
+.dashboard-navbar a:hover,
+.dashboard-navbar a:focus,
+.dashboard-navbar a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+  color: var(--primary-font-color);
+}
+
+.dashboard-income {
+  padding: 2.25em 1.625em;
+  background-color: #ffead0;
+}
+
+.dashboard-income h2 {
+  font-size: 2.25rem;
+  padding-bottom: 0.9em;
+}
+
+.dashboard-income p {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--nav-links-color);
+  padding-bottom: 2em;
+}
+
+.dashboard-income p span {
+  text-decoration: underline;
+  margin-left: 0.25em;
+  text-underline-offset: 0.3em;
+  font-weight: 700;
+}
+
+.dashboard-income p a {
+  margin-left: auto;
+}
+
+.dashboard-info a {
+  font-size: 1rem;
+  color: var(--nav-links-color);
+  font-weight: 600;
+}
+
+.dashboard-info a:hover,
+.dashboard-info a:focus,
+.dashboard-info a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+  color: var(--primary-font-color);
+}
+
+.dashboard-income h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.dashboard-reviews {
+  padding: 2.8em 1.625em;
+  background-color: #ffddb2;
+}
+
+.dashboard-reviews p {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.star-icon {
+  margin: 0 0.2em 0 0.6em;
+  color: #ff8c38;
+  font-size: 1.5rem;
+}
+
+.dashboard-score {
+  letter-spacing: 0.025em;
+}
+
+.dashboard-score span {
+  font-weight: 500;
+  color: var(--nav-links-color);
+}
+
+.dashboard-reviews a {
+  margin-left: auto;
+}
+
+.dashboard-listings {
+  padding: 2.375em 1.625em;
+}
+
+.dashboard-listings p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25em;
+}
+
+.dashboard-listings a {
+  margin-left: auto;
+}

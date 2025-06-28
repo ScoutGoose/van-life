@@ -1,5 +1,5 @@
 .van-details-page {
-  min-height: calc(100vh - 6.3125em - 4.58em);
+  flex-grow: 1;
   width: 100%;
   padding: 2em 1.62em 5.2em;
 }

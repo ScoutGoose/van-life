@@ -1,0 +1,22 @@
+.loader {
+  display: flex;
+  align-items: center;
+}
+
+.loader img {
+  display: inline-block;
+  width: 4rem;
+  animation-name: loader-spin;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

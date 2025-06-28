@@ -1,9 +1,9 @@
 .about-container {
-  min-height: calc(100vh - 6.3125em - 4.58em);
+  flex-grow: 1;
 }
 
 .about-header-img {
-  height: 15em;
+  height: 20em;
   background: linear-gradient(rgba(0, 0, 0, 0.25)),
     url("../assets/images/about-hero.jpg") bottom/cover no-repeat;
 }
