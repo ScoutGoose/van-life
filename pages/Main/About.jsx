@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/pages-styles/about.css";
+import "../../styles/main/about.css";
 export default function About() {
   return (
     <section className="about-page">

@@ -2,29 +2,6 @@
   flex-grow: 1;
 }
 
-.dashboard-navbar {
-  font-size: 1.125rem;
-  padding: 1.75em 1.4em;
-}
-
-.dashboard-navbar a:not(:first-of-type) {
-  margin-left: 1.6em;
-}
-
-.dashboard-navbar a {
-  color: var(--nav-links-color);
-  font-weight: 500;
-}
-
-.dashboard-navbar a:hover,
-.dashboard-navbar a:focus,
-.dashboard-navbar a:active {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-  cursor: pointer;
-  color: var(--primary-font-color);
-}
-
 .dashboard-income {
   padding: 2.25em 1.625em;
   background-color: #ffead0;
@@ -119,4 +96,31 @@
 
 .dashboard-listings a {
   margin-left: auto;
+}
+
+/* ============================================================================================= */
+/* ************************************* DASHBOARD NAVBAR ************************************** */
+/* ============================================================================================= */
+
+.dashboard-navbar {
+  font-size: 1.125rem;
+  padding: 1.75em 1.4em;
+}
+
+.dashboard-navbar a:not(:first-of-type) {
+  margin-left: 1.6em;
+}
+
+.dashboard-navbar a {
+  color: var(--nav-links-color);
+  font-weight: 500;
+}
+
+.dashboard-navbar a:hover,
+.dashboard-navbar a:focus,
+.dashboard-navbar a:active {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  cursor: pointer;
+  color: var(--primary-font-color);
 }

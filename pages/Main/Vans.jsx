@@ -1,8 +1,7 @@
-import "../styles/pages-styles/vans.css";
 import { useState, useEffect } from "react";
-import VanCard from "../components/VanCard";
-import { Link } from "react-router-dom";
-import Loader from "../components/Loader";
+import "../../styles/main/vans.css";
+import VanCard from "../../components/main-components/VanCard";
+import Loader from "../../components/main-components/Loader";
 export default function Vans() {
   const [vans, setVans] = useState(null);
   useEffect(() => {

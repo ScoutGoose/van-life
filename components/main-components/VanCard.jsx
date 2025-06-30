@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/components-styles/vanCard.css";
+import "../../styles/components-styles/vanCard.css";
 export default function VanCard({ id, name, price, imageUrl, type }) {
   return (
     <div className="single-card">

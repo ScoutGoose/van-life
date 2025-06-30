@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/components-styles/host/dashboardVanCard.css";
+import "../../styles/components-styles/dashboardVanCard.css";
 export default function DashboardVanCard({ id, name, price, imageUrl }) {
   return (
     <div className="dashboard-van-card">

@@ -1,13 +1,13 @@
-import "../styles/main.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Vans from "../pages/Vans";
-import VanDetails from "../pages/VanDetails";
-import Layout from "../components/Layout";
-import Dashboard from "../pages/Host/Dashboard";
-import Reviews from "../pages/Host/Reviews";
-import Income from "../pages/Host/Income";
+import Home from "../pages/Main/Home";
+import About from "../pages/Main/About";
+import Vans from "../pages/Main/Vans";
+import VanDetails from "../pages/Main/VanDetails";
+import Layout from "../components/main-components/Layout";
+import DashboardLayout from "../components/host-components/DashboardLayout";
+import DashboardGeneral from "../pages/Host/DashboardGeneral";
+import DashboardReviews from "../pages/Host/DashboardReviews";
+import DashboardIncome from "../pages/Host/DashboardIncome";
 function App() {
   return (
     <BrowserRouter>
@@ -17,9 +17,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetails />} />
-          <Route path="/host" element={<Dashboard />} />
-          <Route path="/host/reviews" element={<Reviews />} />
-          <Route path="/host/income" element={<Income />} />
+          <Route element={<DashboardLayout />}>
+            <Route path="/host" element={<DashboardGeneral />} />
+            <Route path="/host/reviews" element={<DashboardReviews />} />
+            <Route path="/host/income" element={<DashboardIncome />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
