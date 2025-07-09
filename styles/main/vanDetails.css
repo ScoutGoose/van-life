@@ -10,7 +10,6 @@
 
 .van-details-page a {
   font-size: 1rem;
-  display: block;
   margin-bottom: 2.5em;
   color: var(--primary-font-color);
   display: flex;

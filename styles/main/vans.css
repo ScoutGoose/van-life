@@ -15,7 +15,6 @@
 }
 
 .vans-options-container {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
   justify-items: center;

@@ -1,18 +1,23 @@
+/* ============================================================================================= */
+/* ************************************* DASHBOARD GENERAL ************************************** */
+/* ============================================================================================= */
 .dashboard-page {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.dashboard-income {
+.dashboard-general-income {
   padding: 2.25em 1.625em;
   background-color: #ffead0;
 }
 
-.dashboard-income h2 {
+.dashboard-general-income h2 {
   font-size: 2.25rem;
   padding-bottom: 0.9em;
 }
 
-.dashboard-income p {
+.dashboard-general-income p {
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -20,43 +25,43 @@
   padding-bottom: 2em;
 }
 
-.dashboard-income p span {
+.dashboard-general-income p span {
   text-decoration: underline;
   margin-left: 0.25em;
   text-underline-offset: 0.3em;
   font-weight: 700;
 }
 
-.dashboard-income p a {
+.dashboard-general-income p a {
   margin-left: auto;
 }
 
-.dashboard-info a {
+.dashboard-general a {
   font-size: 1rem;
   color: var(--nav-links-color);
   font-weight: 600;
 }
 
-.dashboard-info a:hover,
-.dashboard-info a:focus,
-.dashboard-info a:active {
+.dashboard-general a:hover,
+.dashboard-general a:focus,
+.dashboard-general a:active {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   cursor: pointer;
   color: var(--primary-font-color);
 }
 
-.dashboard-income h3 {
+.dashboard-general-income h3 {
   font-size: 3rem;
   font-weight: 800;
 }
 
-.dashboard-reviews {
+.dashboard-general-reviews {
   padding: 2.8em 1.625em;
   background-color: #ffddb2;
 }
 
-.dashboard-reviews p {
+.dashboard-general-reviews p {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -69,24 +74,24 @@
   font-size: 1.5rem;
 }
 
-.dashboard-score {
+.dashboard-general-score {
   letter-spacing: 0.025em;
 }
 
-.dashboard-score span {
+.dashboard-general-score span {
   font-weight: 500;
   color: var(--nav-links-color);
 }
 
-.dashboard-reviews a {
+.dashboard-general-reviews a {
   margin-left: auto;
 }
 
-.dashboard-listings {
+.dashboard-general-listings {
   padding: 2.375em 1.625em;
 }
 
-.dashboard-listings p {
+.dashboard-general-listings p {
   font-size: 1.5rem;
   font-weight: 700;
   display: flex;
@@ -94,7 +99,7 @@
   margin-bottom: 1.25em;
 }
 
-.dashboard-listings a {
+.dashboard-general-listings a {
   margin-left: auto;
 }
 
@@ -122,5 +127,11 @@
   text-decoration: underline;
   text-underline-offset: 0.2em;
   cursor: pointer;
+  color: var(--primary-font-color);
+}
+
+.dashboard-navbar .active-link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
   color: var(--primary-font-color);
 }
