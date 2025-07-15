@@ -1,28 +1,28 @@
 import { NavLink } from "react-router-dom";
-export default function DashboardNavbar() {
+export default function HostNavbar() {
   return (
-    <div className="dashboard-navbar">
+    <div className="host-navbar">
       <NavLink
-        to="/host"
+        to="."
         end
         className={({ isActive }) => (isActive ? "active-link" : null)}
       >
         Dashboard
       </NavLink>
       <NavLink
-        to="/host/income"
+        to="income"
         className={({ isActive }) => (isActive ? "active-link" : null)}
       >
         Income
       </NavLink>
       <NavLink
-        to="/host/vans"
+        to="vans"
         className={({ isActive }) => (isActive ? "active-link" : null)}
       >
         Vans
       </NavLink>
       <NavLink
-        to="/host/reviews"
+        to="reviews"
         className={({ isActive }) => (isActive ? "active-link" : null)}
       >
         Reviews

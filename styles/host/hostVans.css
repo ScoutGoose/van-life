@@ -1,9 +1,9 @@
-.dashboard-vans h2 {
+.host-vans h2 {
   font-size: 2rem;
   margin-bottom: 1em;
 }
 
-.dashboard-vans {
+.host-vans {
   padding: 3.4em 1.58em;
   position: relative;
   flex-grow: 1;

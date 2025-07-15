@@ -1,4 +1,4 @@
-.dashboard-van-card {
+.host-van-card {
   width: 100%;
   padding: 1.125em 1.5em;
   background-color: #fff;
@@ -38,6 +38,9 @@
   color: var(--nav-links-color);
 }
 
-.dashboard-van-card a {
-  font-size: 1rem;
+.host-van-card:hover,
+.host-van-card:focus,
+.host-van-card:active {
+  text-decoration: none !important;
+  /* box-shadow: 5px 5px #000; */
 }

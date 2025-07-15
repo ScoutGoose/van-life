@@ -13,7 +13,7 @@ export default function VanDetails() {
   }, [id]);
   return (
     <section className="van-details-page">
-      <Link to="/vans">
+      <Link to=".." relative="path">
         <HiOutlineArrowLeft className="back-icon" />
         Back to all vans
       </Link>

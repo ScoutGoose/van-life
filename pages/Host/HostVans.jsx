@@ -1,8 +1,8 @@
-import "../../styles/host/dashboardVans.css";
-import DashboardVanCard from "../../components/host-components/DashboardVanCard";
+import "../../styles/host/hostVans.css";
+import HostVanCard from "../../components/host-components/HostVanCard";
 import Loader from "../../components/main-components/Loader";
 import { useEffect, useState } from "react";
-export default function DashboardVans() {
+export default function HostVans() {
   const [vans, setVans] = useState(null);
   useEffect(() => {
     fetch("/api/host/vans")
@@ -12,11 +12,11 @@ export default function DashboardVans() {
   }, []);
   console.log(vans);
   return (
-    <section className="dashboard-vans">
+    <section className="host-vans">
       <h2>Your listed vans</h2>
       <div className="vans-container">
         {vans ? (
-          vans.map((van) => <DashboardVanCard {...van} key={van.id} />)
+          vans.map((van) => <HostVanCard {...van} key={van.id} />)
         ) : (
           <Loader />
         )}

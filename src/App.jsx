@@ -4,15 +4,15 @@ import About from "../pages/Main/About";
 import Vans from "../pages/Main/Vans";
 import VanDetails from "../pages/Main/VanDetails";
 import Layout from "../components/main-components/Layout";
-import DashboardLayout from "../components/host-components/DashboardLayout";
-import DashboardGeneral from "../pages/Host/DashboardGeneral";
-import DashboardReviews from "../pages/Host/DashboardReviews";
-import DashboardIncome from "../pages/Host/DashboardIncome";
-import DashboardVans from "../pages/Host/DashboardVans";
-import DashboardVanDetailLayout from "../components/host-components/DashboardVanDetailsLayout";
-import DashboardVanDescription from "../pages/Host/DashboardVanDescription";
-import DashboardVanPhotos from "../pages/Host/DashboardVanPhotos";
-import DashboardVanPricing from "../pages/Host/DashboardVanPricing";
+import HostLayout from "../components/host-components/HostLayout";
+import HostGeneral from "../pages/Host/HostGeneral";
+import HostReviews from "../pages/Host/HostReviews";
+import HostIncome from "../pages/Host/HostIncome";
+import HostVans from "../pages/Host/HostVans";
+import HostVanDetailLayout from "../components/host-components/HostVanDetailsLayout";
+import HostVanDescription from "../pages/Host/HostVanDescription";
+import HostVanPhotos from "../pages/Host/HostVanPhotos";
+import HostVanPricing from "../pages/Host/HostVanPricing";
 function App() {
   return (
     <BrowserRouter>
@@ -22,15 +22,15 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetails />} />
-          <Route path="host" element={<DashboardLayout />}>
-            <Route index element={<DashboardGeneral />} />
-            <Route path="reviews" element={<DashboardReviews />} />
-            <Route path="income" element={<DashboardIncome />} />
-            <Route path="vans" element={<DashboardVans />} />
-            <Route path="vans/:id" element={<DashboardVanDetailLayout />}>
-              <Route index element={<DashboardVanDescription />} />
-              <Route path="pricing" element={<DashboardVanPricing />} />
-              <Route path="photos" element={<DashboardVanPhotos />} />
+          <Route path="host" element={<HostLayout />}>
+            <Route index element={<HostGeneral />} />
+            <Route path="reviews" element={<HostReviews />} />
+            <Route path="income" element={<HostIncome />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVanDetailLayout />}>
+              <Route index element={<HostVanDescription />} />
+              <Route path="pricing" element={<HostVanPricing />} />
+              <Route path="photos" element={<HostVanPhotos />} />
             </Route>
           </Route>
         </Route>

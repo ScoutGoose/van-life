@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "../../styles/components-styles/dashboardVanCard.css";
-export default function DashboardVanCard({ id, name, price, imageUrl }) {
+import "../../styles/components-styles/hostVanCard.css";
+export default function HostVanCard({ id, name, price, imageUrl }) {
   return (
-    <div className="dashboard-van-card">
+    <Link to={`/host/vans/${id}`} className="host-van-card">
       <div className="image-container">
         <img src={imageUrl} alt="van photo" />
       </div>
@@ -10,7 +10,6 @@ export default function DashboardVanCard({ id, name, price, imageUrl }) {
         <h4>{name}</h4>
         <span>${price}/day</span>
       </div>
-      <Link to={`/host/vans/${id}`}>Edit</Link>
-    </div>
+    </Link>
   );
 }

@@ -1,23 +1,23 @@
 /* ============================================================================================= */
-/* ************************************* DASHBOARD GENERAL ************************************** */
+/* ************************************* HOST GENERAL ************************************** */
 /* ============================================================================================= */
-.dashboard-page {
+.host-page {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.dashboard-general-income {
+.host-general-income {
   padding: 2.25em 1.625em;
   background-color: #ffead0;
 }
 
-.dashboard-general-income h2 {
+.host-general-income h2 {
   font-size: 2.25rem;
   padding-bottom: 0.9em;
 }
 
-.dashboard-general-income p {
+.host-general-income p {
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -25,43 +25,43 @@
   padding-bottom: 2em;
 }
 
-.dashboard-general-income p span {
+.host-general-income p span {
   text-decoration: underline;
   margin-left: 0.25em;
   text-underline-offset: 0.3em;
   font-weight: 700;
 }
 
-.dashboard-general-income p a {
+.host-general-income p a {
   margin-left: auto;
 }
 
-.dashboard-general a {
+.host-general a {
   font-size: 1rem;
   color: var(--nav-links-color);
   font-weight: 600;
 }
 
-.dashboard-general a:hover,
-.dashboard-general a:focus,
-.dashboard-general a:active {
+.host-general a:hover,
+.host-general a:focus,
+.host-general a:active {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   cursor: pointer;
   color: var(--primary-font-color);
 }
 
-.dashboard-general-income h3 {
+.host-general-income h3 {
   font-size: 3rem;
   font-weight: 800;
 }
 
-.dashboard-general-reviews {
+.host-general-reviews {
   padding: 2.8em 1.625em;
   background-color: #ffddb2;
 }
 
-.dashboard-general-reviews p {
+.host-general-reviews p {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -74,24 +74,24 @@
   font-size: 1.5rem;
 }
 
-.dashboard-general-score {
+.host-general-score {
   letter-spacing: 0.025em;
 }
 
-.dashboard-general-score span {
+.host-general-score span {
   font-weight: 500;
   color: var(--nav-links-color);
 }
 
-.dashboard-general-reviews a {
+.host-general-reviews a {
   margin-left: auto;
 }
 
-.dashboard-general-listings {
+.host-general-listings {
   padding: 2.375em 1.625em;
 }
 
-.dashboard-general-listings p {
+.host-general-listings p {
   font-size: 1.5rem;
   font-weight: 700;
   display: flex;
@@ -99,38 +99,38 @@
   margin-bottom: 1.25em;
 }
 
-.dashboard-general-listings a {
+.host-general-listings a {
   margin-left: auto;
 }
 
 /* ============================================================================================= */
-/* ************************************* DASHBOARD NAVBAR ************************************** */
+/* **************************************** HOST NAVBAR **************************************** */
 /* ============================================================================================= */
 
-.dashboard-navbar {
+.host-navbar {
   font-size: 1.125rem;
   padding: 1.75em 1.4em;
 }
 
-.dashboard-navbar a:not(:first-of-type) {
+.host-navbar a:not(:first-of-type) {
   margin-left: 1.6em;
 }
 
-.dashboard-navbar a {
+.host-navbar a {
   color: var(--nav-links-color);
   font-weight: 500;
 }
 
-.dashboard-navbar a:hover,
-.dashboard-navbar a:focus,
-.dashboard-navbar a:active {
+.host-navbar a:hover,
+.host-navbar a:focus,
+.host-navbar a:active {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   cursor: pointer;
   color: var(--primary-font-color);
 }
 
-.dashboard-navbar .active-link {
+.host-navbar .active-link {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   color: var(--primary-font-color);
