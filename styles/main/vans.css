@@ -21,3 +21,62 @@
   gap: 2rem;
   flex-grow: 1;
 }
+
+/* ============================================================================================= */
+/* *************************************** FILTER NAVBAR *************************************** */
+/* ============================================================================================= */
+
+.filter-menu {
+  margin: 1.5em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+  justify-items: start;
+  gap: 0.5em;
+}
+
+.filter-menu a {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.375em 1.625em;
+  border-radius: 0.3125em;
+  color: var(--nav-links-color);
+  background-color: #ffead0;
+  font-weight: 500;
+  transition: all linear 0.1s;
+}
+
+.filter-menu a:last-child:hover {
+  color: #fff;
+  background-color: rgb(199, 11, 11);
+}
+
+.simple:hover {
+  color: #fff;
+  background-color: var(--van-type-background-color-simple);
+}
+
+.rugged:hover {
+  color: #fff;
+  background-color: var(--van-type-background-color-rugged);
+}
+
+.luxury:hover {
+  color: #fff;
+  background-color: var(--van-type-background-color-luxury);
+}
+
+.filter-menu .active-filter.simple {
+  color: #fff;
+  background-color: var(--van-type-background-color-simple);
+}
+
+.filter-menu .active-filter.rugged {
+  color: #fff;
+  background-color: var(--van-type-background-color-rugged);
+}
+
+.filter-menu .active-filter.luxury {
+  color: #fff;
+  background-color: var(--van-type-background-color-luxury);
+}

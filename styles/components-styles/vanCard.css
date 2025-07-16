@@ -1,11 +1,11 @@
 .single-card {
-  width: 14.375rem;
+  width: 100%;
   border-radius: 0.3125em;
 }
 
 .card-img-container {
   width: 100%;
-  height: 14.375rem;
+  aspect-ratio: 1/1;
   border-radius: 0.3125em;
 }
 
