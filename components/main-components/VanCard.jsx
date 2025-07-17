@@ -3,7 +3,7 @@ import "../../styles/components-styles/vanCard.css";
 export default function VanCard({ id, name, price, imageUrl, type }) {
   return (
     <div className="single-card">
-      <Link to={`/vans/${id}`}>
+      <Link to={`${id}`}>
         <div className="card-img-container">
           <img src={imageUrl} alt="van photo" />
         </div>

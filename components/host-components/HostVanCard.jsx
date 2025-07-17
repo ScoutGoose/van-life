@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../../styles/components-styles/hostVanCard.css";
 export default function HostVanCard({ id, name, price, imageUrl }) {
   return (
-    <Link to={`/host/vans/${id}`} className="host-van-card">
+    <Link to={`${id}`} className="host-van-card">
       <div className="image-container">
         <img src={imageUrl} alt="van photo" />
       </div>
