@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import "../../styles/components-styles/vanCard.css";
-export default function VanCard({ id, name, price, imageUrl, type }) {
+export default function VanCard({ id, name, price, imageUrl, type, state }) {
+  console.log(state);
   return (
     <div className="single-card">
-      <Link to={`${id}`}>
+      <Link to={`${id}`} state={state}>
         <div className="card-img-container">
           <img src={imageUrl} alt="van photo" />
         </div>

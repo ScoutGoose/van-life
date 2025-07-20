@@ -42,6 +42,12 @@ body {
   }
 }
 
+.outlet-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* ============================================================================================= */
 /* *************************************** MAIN NAVBAR ***************************************** */
 /* ============================================================================================= */
@@ -110,4 +116,29 @@ footer h5 {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   color: var(--primary-font-color);
+}
+
+.not-found {
+  padding: 1.625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.not-found h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.not-found a {
+  font-size: 1.125rem;
+  border-radius: 0.3em;
+  text-align: center;
+  font-weight: 500;
+  padding: 1em;
+  background-color: var(--van-type-background-color-luxury);
+  color: var(--secondary-font-color);
+  letter-spacing: 0.5px;
 }

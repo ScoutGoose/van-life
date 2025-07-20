@@ -1,9 +1,11 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useLocation } from "react-router-dom";
 import "../../styles/main/vanDetails.css";
 import { useEffect, useState } from "react";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 export default function VanDetails() {
   const { id } = useParams();
+  const location = useLocation();
+  console.log(location);
   const [van, setVan] = useState(null);
   useEffect(() => {
     fetch(`/api/vans/${id}`)
@@ -13,9 +15,9 @@ export default function VanDetails() {
   }, [id]);
   return (
     <section className="van-details-page">
-      <Link to=".." relative="path">
+      <Link to={`..${location.state?.search || ""}`} relative="path">
         <HiOutlineArrowLeft className="back-icon" />
-        Back to all vans
+        {`Back to ${location.state?.type || "all"} vans`}
       </Link>
       {van && (
         <section className="van-details">

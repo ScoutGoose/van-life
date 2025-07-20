@@ -7,8 +7,6 @@ export default function Vans() {
   const [vans, setVans] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const typeFilter = searchParams.get("type");
-  console.log(typeFilter);
-
   useEffect(() => {
     fetch("/api/vans")
       .then((res) => res.json())
@@ -98,9 +96,27 @@ export default function Vans() {
           typeFilter ? (
             vans
               .filter((van) => van.type === typeFilter)
-              .map((van) => <VanCard {...van} key={van.id} />)
+              .map((van) => (
+                <VanCard
+                  {...van}
+                  key={van.id}
+                  state={{
+                    search: `?${searchParams.toString()}`,
+                    type: typeFilter,
+                  }}
+                />
+              ))
           ) : (
-            vans.map((van) => <VanCard {...van} key={van.id} />)
+            vans.map((van) => (
+              <VanCard
+                {...van}
+                key={van.id}
+                state={{
+                  search: `?${searchParams.toString()}`,
+                  type: typeFilter,
+                }}
+              />
+            ))
           )
         ) : (
           <Loader />

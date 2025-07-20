@@ -3,7 +3,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className="nav-title">
-        <Link to="/">
+        <Link to=".">
           <h2>#VANLIFE</h2>
         </Link>
       </div>
