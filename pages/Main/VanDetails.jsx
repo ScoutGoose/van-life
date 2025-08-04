@@ -2,16 +2,16 @@ import { useParams, Link, useLocation } from "react-router-dom";
 import "../../styles/main/vanDetails.css";
 import { useEffect, useState } from "react";
 import { HiOutlineArrowLeft } from "react-icons/hi";
+import { getOneVan } from "../../src/api";
 export default function VanDetails() {
   const { id } = useParams();
   const location = useLocation();
-  console.log(location);
   const [van, setVan] = useState(null);
   useEffect(() => {
-    fetch(`/api/vans/${id}`)
-      .then((res) => res.json())
-      .then((data) => setVan(data.vans))
-      .catch((error) => console.log(error));
+    (async function () {
+      const data = await getOneVan(id);
+      setVan(data);
+    })();
   }, [id]);
   return (
     <section className="van-details-page">

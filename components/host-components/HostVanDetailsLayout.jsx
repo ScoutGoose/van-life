@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 // import { createContext } from "react";
-import Loader from "../../components/main-components/Loader";
 import "../../styles/host/hostVanDetails.css";
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
+import { getHostedVan } from "../../src/api";
 // const VanContext = createContext(null);
 export default function HostVanDetailLayout() {
   const { id } = useParams();
   const [van, setVan] = useState(null);
   useEffect(() => {
-    fetch(`/api/host/vans/${id}`)
-      .then((res) => res.json())
-      .then((data) => setVan(...data.vans))
-      .catch((error) => console.log(error));
+    (async function () {
+      const data = await getHostedVan(id);
+      setVan(data);
+    })();
   }, []);
   return (
     <section className="host-van-details">

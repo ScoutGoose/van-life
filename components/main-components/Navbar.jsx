@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 export default function Navbar() {
   return (
     <nav>
@@ -25,6 +26,12 @@ export default function Navbar() {
           className={({ isActive }) => (isActive ? "active-link" : null)}
         >
           About
+        </NavLink>
+        <NavLink
+          to="/login"
+          className={({ isActive }) => (isActive ? "active-link" : null)}
+        >
+          <CgProfile />
         </NavLink>
       </div>
     </nav>

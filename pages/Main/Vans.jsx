@@ -3,15 +3,18 @@ import { useSearchParams, NavLink, Link } from "react-router-dom";
 import "../../styles/main/vans.css";
 import VanCard from "../../components/main-components/VanCard";
 import Loader from "../../components/main-components/Loader";
+import { getAllVans } from "../../src/api";
 export default function Vans() {
   const [vans, setVans] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
+  const [loading, setLoading] = useState(true);
   const typeFilter = searchParams.get("type");
   useEffect(() => {
-    fetch("/api/vans")
-      .then((res) => res.json())
-      .then((data) => setVans(data.vans))
-      .catch((error) => console.log(error));
+    (async function () {
+      const data = await getAllVans();
+      setVans(data);
+      setLoading(false);
+    })();
   }, []);
 
   // ***********************************************************
@@ -92,22 +95,12 @@ export default function Vans() {
         ) : null}
       </div>
       <div className="vans-options-container">
-        {vans ? (
-          typeFilter ? (
-            vans
-              .filter((van) => van.type === typeFilter)
-              .map((van) => (
-                <VanCard
-                  {...van}
-                  key={van.id}
-                  state={{
-                    search: `?${searchParams.toString()}`,
-                    type: typeFilter,
-                  }}
-                />
-              ))
-          ) : (
-            vans.map((van) => (
+        {loading ? (
+          <Loader />
+        ) : typeFilter ? (
+          vans
+            .filter((van) => van.type === typeFilter)
+            .map((van) => (
               <VanCard
                 {...van}
                 key={van.id}
@@ -117,9 +110,17 @@ export default function Vans() {
                 }}
               />
             ))
-          )
         ) : (
-          <Loader />
+          vans.map((van) => (
+            <VanCard
+              {...van}
+              key={van.id}
+              state={{
+                search: `?${searchParams.toString()}`,
+                type: typeFilter,
+              }}
+            />
+          ))
         )}
       </div>
     </section>

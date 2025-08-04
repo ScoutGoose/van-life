@@ -2,13 +2,14 @@ import "../../styles/host/hostVans.css";
 import HostVanCard from "../../components/host-components/HostVanCard";
 import Loader from "../../components/main-components/Loader";
 import { useEffect, useState } from "react";
+import { getHostedVans } from "../../src/api";
 export default function HostVans() {
   const [vans, setVans] = useState(null);
   useEffect(() => {
-    fetch("/api/host/vans")
-      .then((res) => res.json())
-      .then((data) => setVans(data.vans))
-      .catch((error) => console.log(error));
+    (async function () {
+      const data = await getHostedVans();
+      setVans(data);
+    })();
   }, []);
   console.log(vans);
   return (
