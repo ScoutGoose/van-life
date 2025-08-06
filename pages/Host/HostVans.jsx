@@ -2,12 +2,12 @@ import "../../styles/host/hostVans.css";
 import HostVanCard from "../../components/host-components/HostVanCard";
 import Loader from "../../components/main-components/Loader";
 import { useEffect, useState } from "react";
-import { getHostedVans } from "../../src/api";
+import { getHostVans } from "../../src/api";
 export default function HostVans() {
   const [vans, setVans] = useState(null);
   useEffect(() => {
     (async function () {
-      const data = await getHostedVans();
+      const data = await getHostVans();
       setVans(data);
     })();
   }, []);

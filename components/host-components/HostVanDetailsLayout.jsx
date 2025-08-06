@@ -5,14 +5,14 @@ import { Outlet } from "react-router-dom";
 import "../../styles/host/hostVanDetails.css";
 import { Link, NavLink } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
-import { getHostedVan } from "../../src/api";
+import { getHostVan } from "../../src/api";
 // const VanContext = createContext(null);
 export default function HostVanDetailLayout() {
   const { id } = useParams();
   const [van, setVan] = useState(null);
   useEffect(() => {
     (async function () {
-      const data = await getHostedVan(id);
+      const data = await getHostVan(id);
       setVan(data);
     })();
   }, []);

@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { IoIosStar } from "react-icons/io";
 import HostVanCard from "../../components/host-components/HostVanCard";
-import { getHostedVans } from "../../src/api";
+import { getHostVans } from "../../src/api";
 export default function HostGeneral() {
   const [vans, setVans] = useState(null);
   useEffect(() => {
     (async function () {
-      const data = await getHostedVans();
+      const data = await getHostVans();
       setVans(data);
     })();
   }, []);
